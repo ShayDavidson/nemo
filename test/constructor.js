@@ -72,7 +72,7 @@ describe('@constructor@', function () {
     });
   });
   it("should launch nemo with @allArgs@", function (done) {
-    var nemoBaseDir = path.join(process.cwd(), 'test');
+    var nemoBaseDir = path.resolve(__dirname);
     nemo = Nemo(nemoBaseDir, {
       'data': {
         'argPassthrough': true
